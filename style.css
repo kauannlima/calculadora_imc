@@ -1,0 +1,68 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom right, #0A2647, #144272,#205295,#2C74B3 );
+  background-size: 100em;
+  height: 1em;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+table{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    border-collapse: collapse;
+    font-size: 1em;
+}
+.calculadora {
+  width: 18em;
+  margin: 16em auto 0px;
+  border: .2em solid white;
+  border-radius: .75em;
+  padding: 1em;
+}
+.header-section {
+  text-align: center;
+  font-size: 1.4em;
+  margin: 1.3em 0;
+  
+}
+.main-calculadora td{
+    text-align: center;
+    width: 33%;
+}
+
+.main-calculadora input, .resultado #output{
+    text-align: center;
+    width: 70%;
+    background-color: white;
+height: 1.5em;
+    margin: 1.3em auto;
+    border: none;
+    outline: 0;
+    color: black;
+    box-sizing: border-box;
+}
+ .tabela-imc tr {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  .button{
+    display: flex;
+    align-items: center;
+    margin: 1.3em auto;
+    border: .1px solid white;
+    background-color: #144272;
+    color: white;
+    padding: 1em;
+    transition: all .3s ease-in-out;
+    border-radius: .75em;
+  }
+  .button:hover{
+    background-color: #205295;
+  }

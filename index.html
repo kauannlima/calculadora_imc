@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <section class="calculadora">
+        <header class="header-section">
+            <h1>Calculadora IMC</h1>
+        </header>
+
+        <article class="main-calculadora">
+           <table>
+            <tr>
+                <td>Peso</td>
+                <td><input type="number" id="pesoImc"></td>
+                <td>(KG)</td>
+            </tr>
+            <tr>
+                <td>Altura</td>
+                <td><input type="number" id="alturaImc"></td>
+                <td>(CM)</td>
+            </tr>
+           </table>
+
+
+            <button class="button"onclick="calcularImc()">Calcular IMC</button>
+        </article>
+
+        <article class="tabela-imc">
+            <table>
+                <tr>
+                    <th>Classificação</th>
+                    <th>IMC</th>
+                </tr>
+                <tr>
+                    <td>Muito abaixo do peso:</td>
+                    <td>16 a 16,9</td>
+                </tr>
+                <tr>
+                    <td>Abaixo do peso:</td>
+                    <td>17 a 18,4</td>
+                </tr>
+                <tr>
+                    <td>Peso normal:</td>
+                    <td>18,5 a 24,9</td>
+                </tr>
+                <tr>
+                    <td>Acima do peso:</td>
+                    <td>25 a 29,9</td>
+                </tr>
+                <tr>
+                    <td>Obesidade Grau I:</td>
+                    <td>30 a 34,9</td>
+                </tr>
+                <tr>
+                    <td>Obesidade Grau II:</td>
+                    <td>35 a 40</td>
+                </tr>
+                <tr>
+                    <td>Obesidade Grau III:</td>
+                    <td>acima de 40</td>
+                </tr>
+            </table>
+        </article>
+        <article class="resultado">
+            <div id="output"></div>
+
+            <button class="button"onclick="resetarImc()">Resetar</button>
+        </article>
+    </section>
+
+    </section>
+
+
+    <script src="script.js">
+
+
+    </script>
+</body>
+
+</html>
