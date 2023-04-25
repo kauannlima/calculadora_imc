@@ -12,18 +12,18 @@ function calcularImc() {
   );
 
   if (altura <= 0 || (isNaN(altura) && peso <= 0) || isNaN(peso)) {
-    resultado.innerHTML = "Digite dois valores válidos";
+    resultado.innerHTML = "Digite dois valores válidos!";
     document.getElementById("alturaImc").value = "";
     document.getElementById("pesoImc").value = "";
     numeroImc.innerHTML = "Seu IMC é: 0,00"
   } 
   else if (peso <= 0 || isNaN(peso)) {
-    resultado.innerHTML = "Digite um peso válido";
+    resultado.innerHTML = "Digite um peso válido!";
     document.getElementById("pesoImc").value = "";
     numeroImc.innerHTML = "Seu IMC é: 0,00"
   } 
   else if (altura <= 0 || isNaN(altura)) {
-    resultado.innerHTML = "Digite uma altura válida";
+    resultado.innerHTML = "Digite uma altura válida!";
     document.getElementById("alturaImc").value = "";
     numeroImc.innerHTML = "Seu IMC é: 0,00"
   } 
