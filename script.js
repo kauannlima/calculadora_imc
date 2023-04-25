@@ -1,7 +1,7 @@
 let peso;
 let altura;
-let resultado = document.querySelector("#output");
-let nivelImc = document.querySelector("#output2")
+let nivelImc = document.querySelector("#output1")
+let resultado = document.querySelector("#output2");
 nivelImc.style.justifyContent = "center";
 nivelImc.style.alignItems = "center";
 
@@ -15,19 +15,22 @@ function calcularImc() {
     resultado.innerHTML = "Digite dois valores válidos";
     document.getElementById("alturaImc").value = "";
     document.getElementById("pesoImc").value = "";
+    nivelImc. innerHTML = "Seu IMC é: 0,00"
+    
   } else if (peso <= 0 || isNaN(peso)) {
     resultado.innerHTML = "Digite um peso válido";
     document.getElementById("pesoImc").value = "";
+    nivelImc. innerHTML = "Seu IMC é: 0,00"
   } else if (altura <= 0 || isNaN(altura)) {
     resultado.innerHTML = "Digite uma altura válida";
     document.getElementById("alturaImc").value = "";
+    nivelImc. innerHTML = "Seu IMC é: 0,00"
   } else {
      const calcImc = peso / (altura * 2);
 
     if (calcImc > 40) {
       resultado.innerHTML = "Obesidade Grau III";
       nivelImc. innerHTML = "Seu IMC é: "+calcImc.toFixed(2).replace(".", ",");
-
     } else if (calcImc >= 35 && calcImc <= 40) {
       resultado.innerHTML = "Obesidade Grau II";
       nivelImc. innerHTML = "Seu IMC é: "+calcImc.toFixed(2).replace(".", ",");

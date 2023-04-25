@@ -52,7 +52,7 @@ height: 1.5em;
     color: black;
     box-sizing: border-box;
 }
-.resultado #output2{
+.resultado #output1{
   display: flex;
   align-items: right;
   border: .1px solid white;
