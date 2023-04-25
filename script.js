@@ -48,7 +48,7 @@ function calcularImc() {
     } else if (imcCalculado >= 17 && imcCalculado <= 18.4) {
       resultado.innerHTML = "Abaixo do peso";
       numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
-    } else {
+    } else if(imcCalculado <=16){
       resultado.innerHTML = "Muito abaixo do peso";
       numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
     }
