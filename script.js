@@ -1,9 +1,9 @@
 let peso;
 let altura;
-let nivelImc = document.querySelector("#output1")
+let numeroImc = document.querySelector("#output1");
 let resultado = document.querySelector("#output2");
-nivelImc.style.justifyContent = "center";
-nivelImc.style.alignItems = "center";
+numeroImc.style.justifyContent = "center";
+numeroImc.style.alignItems = "center";
 
 function calcularImc() {
   peso = parseFloat(document.getElementById("pesoImc").value.replace(",", "."));
@@ -15,45 +15,49 @@ function calcularImc() {
     resultado.innerHTML = "Digite dois valores válidos";
     document.getElementById("alturaImc").value = "";
     document.getElementById("pesoImc").value = "";
-    nivelImc. innerHTML = "Seu IMC é: 0,00"
-  } else if (peso <= 0 || isNaN(peso)) {
+    numeroImc.innerHTML = "Seu IMC é: 0,00"
+  } 
+  else if (peso <= 0 || isNaN(peso)) {
     resultado.innerHTML = "Digite um peso válido";
     document.getElementById("pesoImc").value = "";
-    nivelImc. innerHTML = "Seu IMC é: 0,00"
-  } else if (altura <= 0 || isNaN(altura)) {
+    numeroImc.innerHTML = "Seu IMC é: 0,00"
+  } 
+  else if (altura <= 0 || isNaN(altura)) {
     resultado.innerHTML = "Digite uma altura válida";
     document.getElementById("alturaImc").value = "";
-    nivelImc. innerHTML = "Seu IMC é: 0,00"
-  } else {
-     const calcImc = peso / (altura * 2);
-
-    if (calcImc > 40) {
+    numeroImc.innerHTML = "Seu IMC é: 0,00"
+  } 
+  else {
+     const imcCalculado = peso / (altura * 2);
+    if (imcCalculado > 40) {
       resultado.innerHTML = "Obesidade Grau III";
-      nivelImc. innerHTML = "Seu IMC é: "+calcImc.toFixed(2).replace(".", ",");
-    } else if (calcImc >= 35 && calcImc <= 40) {
+      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
+    } 
+    else if (imcCalculado >= 35 && imcCalculado <= 40) {
       resultado.innerHTML = "Obesidade Grau II";
-      nivelImc. innerHTML = "Seu IMC é: "+calcImc.toFixed(2).replace(".", ",");
-    } else if (calcImc >= 30 && calcImc <= 34.9) {
+      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
+    } else if (imcCalculado >= 30 && imcCalculado <= 34.9) {
       resultado.innerHTML = "Obesidade Grau I";
-      nivelImc. innerHTML = "Seu IMC é: "+calcImc.toFixed(2).replace(".", ",");
-    } else if (nivelImc >= 25 && calcImc <= 29.9) {
+      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
+    } else if (numeroImc >= 25 && imcCalculado <= 29.9) {
       resultado.innerHTML = "Acima do peso";
-      nivelImc. innerHTML = "Seu IMC é: "+calcImc.toFixed(2).replace(".", ",");
-    } else if (calcImc >= 18.5 && calcImc <= 24.9) {
+      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
+    } else if (imcCalculado >= 18.5 && imcCalculado <= 24.9) {
       resultado.innerHTML = "Peso normal";
-      nivelImc. innerHTML = "Seu IMC é: "+calcImc.toFixed(2).replace(".", ",");
-    } else if (calcImc >= 17 && calcImc <= 18.4) {
+      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
+    } else if (imcCalculado >= 17 && imcCalculado <= 18.4) {
       resultado.innerHTML = "Abaixo do peso";
-      nivelImc. innerHTML = "Seu IMC é: "+calcImc.toFixed(2).replace(".", ",");
+      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
     } else {
       resultado.innerHTML = "Muito abaixo do peso";
-      nivelImc. innerHTML = "Seu IMC é: "+calcImc.toFixed(2).replace(".", ",");
+      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
     }
   }
 }
+
 function resetarImc() {
   document.getElementById("pesoImc").value = "";
   document.getElementById("alturaImc").value = "";
   resultado.innerHTML = "";
-  nivelImc. innerHTML = "Seu IMC é: 0,00"
+  numeroImc. innerHTML = "Seu IMC é: 0,00";
 }
