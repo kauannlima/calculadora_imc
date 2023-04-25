@@ -13,8 +13,6 @@
 </head>
 
 <body>
-
-
     <section class="calculadora">
         <header class="header-section">
             <h1>Calculadora IMC</h1>
@@ -25,17 +23,17 @@
             <tr>
                 <td>Peso</td>
                 <td><input type="number" id="pesoImc"></td>
-                <td>(KG)</td>
+                <td>(ex: 69,20)</td>
             </tr>
             <tr>
                 <td>Altura</td>
                 <td><input type="number" id="alturaImc"></td>
-                <td>(M)</td>
+                <td>(ex: 1,70)</td>
             </tr>
            </table>
 
-
-            <button class="button"onclick="calcularImc()">Calcular IMC</button>
+            <button class="button"onclick="calcularImc()">Calcular ></button>
+            <button class="button"onclick="resetarImc()">Limpar ></button>
         </article>
 
         <article class="tabela-imc">
@@ -75,19 +73,16 @@
             </table>
         </article>
         <article class="resultado">
+            <div id="output2">Seu IMC é: 0,00</div>
             <div id="output"></div>
 
-            <button class="button"onclick="resetarImc()">Resetar</button>
         </article>
     </section>
 
     </section>
 
-
     <script src="script.js">
-
 
     </script>
 </body>
-
 </html>

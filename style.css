@@ -1,12 +1,11 @@
 html, body {
   height: 100%;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body {
   background: linear-gradient(to bottom right, #0A2647, #144272,#205295,#2C74B3 );
-  background-size: 100em;
+  background-size: 100%;
   height: 1em;
   font-family: 'Ubuntu', sans-serif;
   color: white;
@@ -36,7 +35,7 @@ table{
     width: 33%;
 }
 
-.main-calculadora input, .resultado #output{
+.main-calculadora input, .resultado div{
     text-align: center;
     width: 70%;
     background-color: white;
@@ -47,15 +46,25 @@ height: 1.5em;
     color: black;
     box-sizing: border-box;
 }
+.resultado #output2{
+  display: flex;
+  align-items: right;
+  border: .1px solid white;
+  background-color: #144272;
+  color: white;
+  padding: 1em;
+  transition: all .3s ease-in-out;
+  border-radius: .75em;
+}
  .tabela-imc tr {
     padding: 8px;
     text-align: left;
     border: 1px solid #ddd;
   }
   .button{
-    display: flex;
-    align-items: center;
-    margin: 1.3em auto;
+    float: left;
+    width: 40%;
+    margin: 2em 5%;
     border: .1px solid white;
     background-color: #144272;
     color: white;
