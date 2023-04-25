@@ -8,34 +8,30 @@
     <title>Calculadora IMC</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <section class="calculadora">
         <header class="header-section">
             <h1>Calculadora IMC</h1>
         </header>
-
         <article class="main-calculadora">
-           <table>
-            <tr>
-                <td>Peso</td>
-                <td><input type="number" id="pesoImc"></td>
-                <td>(ex: 69,20)</td>
-            </tr>
-            <tr>
-                <td>Altura</td>
-                <td><input type="number" id="alturaImc"></td>
-                <td>(ex: 1,70)</td>
-            </tr>
-           </table>
-
-            <button class="button"onclick="calcularImc()">Calcular ></button>
-            <button class="button"onclick="resetarImc()">Limpar ></button>
+            <table>
+                <tr>
+                    <td>Peso</td>
+                    <td><input type="number" id="pesoImc"></td>
+                    <td>(ex: 69,20)</td>
+                </tr>
+                <tr>
+                    <td>Altura</td>
+                    <td><input type="number" id="alturaImc"></td>
+                    <td>(ex: 1,70)</td>
+                </tr>
+            </table>
+            <button class="button" onclick="calcularImc()">Calcular ></button>
+            <button class="button" onclick="resetarImc()">Limpar ></button>
         </article>
-
         <article class="tabela-imc">
             <table>
                 <tr>
@@ -75,14 +71,10 @@
         <article class="resultado">
             <div id="output1">Seu IMC é: 0,00</div>
             <div id="output2"></div>
-
         </article>
     </section>
-
     </section>
-
     <script src="script.js">
-
     </script>
 </body>
 </html>

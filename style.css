@@ -6,7 +6,7 @@ html, body {
 body {
   background: linear-gradient(to bottom right, #0A2647, #144272,#205295,#2C74B3 );
   background-size: 100%;
-  height: 1em;
+  height: 1%;
   font-family: 'Ubuntu', sans-serif;
   color: white;
 }

@@ -16,7 +16,6 @@ function calcularImc() {
     document.getElementById("alturaImc").value = "";
     document.getElementById("pesoImc").value = "";
     nivelImc. innerHTML = "Seu IMC é: 0,00"
-    
   } else if (peso <= 0 || isNaN(peso)) {
     resultado.innerHTML = "Digite um peso válido";
     document.getElementById("pesoImc").value = "";
