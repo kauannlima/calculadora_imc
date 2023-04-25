@@ -28,7 +28,7 @@ function calcularImc() {
     numeroImc.innerHTML = "Seu IMC é: 0,00"
   } 
   else {
-     const imcCalculado = peso / (altura+altura);
+     const imcCalculado = peso / (altura*2);
     if (imcCalculado > 40) {
       resultado.innerHTML = "Obesidade Grau III";
       numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
