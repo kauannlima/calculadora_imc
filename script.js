@@ -1,3 +1,5 @@
+(function(){
+
 let peso;
 let altura;
 let numeroImc = document.querySelector("#output1");
@@ -62,3 +64,7 @@ function resetarImc() {
   resultado.innerHTML = "";
   numeroImc. innerHTML = "Seu IMC é: 0,00";
 }
+
+document.getElementById("button1").addEventListener("click", calcularImc);
+document.getElementById("button2").addEventListener("click", resetarImc);
+})()
