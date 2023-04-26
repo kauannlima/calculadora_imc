@@ -28,29 +28,30 @@ function calcularImc() {
     numeroImc.innerHTML = "Seu IMC é: 0,00"
   } 
   else {
-     const imcCalculado = peso / (altura * 2);
+     const imcCalculado = peso / (altura * altura);
+
     if (imcCalculado > 40) {
       resultado.innerHTML = "Obesidade Grau III";
-      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
+      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2);
     } 
     else if (imcCalculado >= 35 && imcCalculado <= 40) {
       resultado.innerHTML = "Obesidade Grau II";
-      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
-    } else if (imcCalculado >= 30 && imcCalculado <= 34.9) {
+      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2);
+    } else if (imcCalculado >= 30 && imcCalculado <= 34.90) {
       resultado.innerHTML = "Obesidade Grau I";
-      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
-    } else if (numeroImc >= 25 && imcCalculado <= 29.9) {
+      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2);
+    } else if (imcCalculado >= 25 && imcCalculado <= 29.90) {
       resultado.innerHTML = "Acima do peso";
-      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
+      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2);
     } else if (imcCalculado >= 18.5 && imcCalculado <= 24.9) {
       resultado.innerHTML = "Peso normal";
-      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
+      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2);
     } else if (imcCalculado >= 17 && imcCalculado <= 18.4) {
       resultado.innerHTML = "Abaixo do peso";
-      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
-    } else {
+      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2);
+    } else if (imcCalculado <= 16.9) {
       resultado.innerHTML = "Muito abaixo do peso";
-      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2).replace(".", ",");
+      numeroImc.innerHTML = "Seu IMC é: "+imcCalculado.toFixed(2);
     }
   }
 }
